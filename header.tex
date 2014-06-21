@@ -1,0 +1,136 @@
+\documentclass[twoside,10pt,parskip=half,ngerman]{scrreprt}
+
+%***********************************************************************
+% include some libs
+%***********************************************************************
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{rotating}
+\usepackage{titlesec}
+\usepackage{mathptmx}
+\usepackage{amssymb} % checkmark
+% \usepackage{helvet}
+\usepackage[scaled]{uarial}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[pdfauthor={Thomas Bandixen}, pdftitle={Seminararbeit Information Retrieval FS14 Studiengang Informatik - Evaluierung der Retrieval-Leistung einer Search Engine am Beispiel der Suche in Programmcode}, colorlinks=true,linkcolor=black,citecolor=black,plainpages=false]{hyperref}
+\usepackage{textcomp}
+\usepackage[squaren]{SIunits}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{geometry}
+\usepackage[absolute]{textpos}
+\usepackage{makeidx}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage{tabularx}
+\usepackage{lmodern}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{float}
+\usepackage{scrhack}
+\usepackage{wallpaper} %\ThisTileWallPaper{}
+\usepackage[super,square]{natbib} %für BibTeX Literaturverzeichnis
+% Glossar
+\usepackage{footnote}
+\makesavenoteenv{description}
+\usepackage[acronym,section=section,hyperfirst=false]{glossaries}
+\renewcommand*{\glsentryfmt}{\ifglsused{\glslabel}{\glsentryname{\glslabel}}{\glsentrydesc{\glslabel}\space(\glsentryname{\glslabel})}}
+\makeglossaries
+
+%***********************************************************************
+% various styles
+%***********************************************************************	
+
+%create index
+\makeindex
+
+%define pagestyle
+\pagestyle{fancy}
+
+%use sans-serif font 
+%\renewcommand{\familydefault}{\sfdefault}
+
+%define page margin
+\geometry{a4paper, top=30mm, left=30mm, right=30mm, bottom=30mm,headsep=10mm,footskip=10mm}
+
+%textpos parameter
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{10mm}{10mm} % start everything near the top-left corner
+\setlength{\parindent}{0pt}
+
+%horizontal lines for titlepage 
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+%reference to source items inlc source number
+\newcommand{\srcref}[1]{\nameref{src:#1} \cite{#1}}
+
+%header / footer 
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+\fancyhead[LO,RE]{} %clear headings for contents 
+\fancyhead[RO,LE]{\nouppercase{\rightmark}} %right odd pages and left even pages
+\fancyhead[LO,RE]{\MakeUppercase{\leftmark}} %left odd pages and right even pages
+\fancyfoot[LE,RO]{\thepage} %page numbering
+\fancyfoot[C]{} %clear centered page numbering 
+
+%define some colors
+\definecolor{gray}{rgb}{0.95,0.95,0.95}
+\definecolor{darkgray}{rgb}{0.4,0.4,0.4}
+%listing colors
+\definecolor{lgray}{RGB}{250,250,250}
+\definecolor{lgreen}{RGB}{63,127,95}
+\definecolor{lred}{RGB}{127,0,85}
+\definecolor{lblue}{RGB}{42,0,255}
+
+%***********************************************************************
+% listing
+%***********************************************************************
+
+\lstset{		
+		basicstyle=\small\ttfamily,
+		frame=single,
+		numbers=left,	
+		numberstyle=\tiny,
+		%firstnumber=auto,
+		numberblanklines=true,
+		captionpos=b,
+		extendedchars=true,
+		float=ht,
+		showtabs=false,
+		tabsize=2,
+		showspaces=false,
+		showstringspaces=false,
+		breaklines=true,
+		%prebreak=\Righttorque,
+		backgroundcolor=\color{lgray},
+		keywordstyle=\color{lred}\bfseries, 
+		commentstyle=\color{lgreen}\ttfamily,
+%		morekeywords={printstr, printhexln},
+		stringstyle=\color{lblue},
+		xleftmargin=0.5cm,
+		xrightmargin=0.5cm
+}
+
+\lstloadlanguages{[Sharp]C}
+%\lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr} %, rulecolor=\color{blue!80!black}
+
+%\lstdefinelanguage{xc}{
+%     keywords={printstr, printhexln, attributes, class, classend, do, empty, endif, endwhile, fail, function, functionend, if, implements, in, inherit, inout, not, of, operations, out, return, set, then, types, while, use},
+%     keywordstyle=\color{lred}\bfseries,
+%     ndkeywords={},
+%     ndkeywordstyle=\color{yellow}\bfseries,
+%     identifierstyle=\color{black},
+%     sensitive=false,
+%     comment=[l]{//},
+%     commentstyle=\color{lgreen}\ttfamily,
+%     string=[l]{"},
+%     stringstyle=\color{lblue}\ttfamily
+%  }

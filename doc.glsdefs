@@ -1,0 +1,30 @@
+\ifglsentryexists{zhaw}{}%
+{%
+\gls@defglossaryentry{zhaw}%
+{%
+name={ZHAW},%
+sort={ZHAW},%
+type={main},%
+first={ZHAW},%
+firstplural={ZHAWs},%
+text={ZHAW},%
+plural={ZHAWs},%
+description={Zürcher Hochschule für Angewandte Wissenschaften},%
+descriptionplural={Zürcher Hochschule für Angewandte Wissenschaften},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

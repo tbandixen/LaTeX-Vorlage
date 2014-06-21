@@ -1,0 +1,49 @@
+\include{header}
+
+\begin{document}
+\include{content/glossarentries}
+\bibliographystyle{plainnat}
+
+\title{PA/BA \LaTeX Vorlage} % In header.tex nachtragen
+\author{Thomas Bandixen}
+
+\include{content/titlepage}
+\setcounter{page}{1}
+\include{content/abstract}
+
+\includepdf{images/Erklaerung_PA.pdf} % Entsprechendes auskommentieren
+% \includepdf{images/Erklaerung_BA.pdf}
+% \newpage
+
+%Inhaltsverzeichnis
+\tableofcontents
+\newpage
+
+%\textbf{}
+%\setcounter{page}{1}
+%\pagenumbering{arabic}
+
+\include{content/einleitung}
+\include{content/grundlagen} % (2. Theoretische Grundlagen)
+\include{content/vorgehen} % Vorgehen / Methoden
+\include{content/resultate}
+\include{content/diskussion} % Diskussion und Ausblick
+
+\chapter{Verzeichnisse}
+\label{sec:Verzeichnisse}
+% \include{content/literatur}
+\addcontentsline{toc}{section}{Literaturverzeichnis}
+\bibliography{BibTeX/literatur}
+\listoffigures
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+\listoftables
+\addcontentsline{toc}{section}{Tabellenverzeichnis}
+% \addcontentsline{toc}{chapter}{(Symbolverzeichnis)}
+\include{content/glossar}
+% \addcontentsline{toc}{section}{(Stichwortverzeichnis)}
+\lstlistoflistings
+\addcontentsline{toc}{section}{Listingverzeichnis}
+ 
+\include{content/anhang}
+
+\end{document}
