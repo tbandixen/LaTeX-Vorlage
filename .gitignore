@@ -88,6 +88,6 @@ sympy-plots-for-*.tex/
 # xindy
 *.xdy
 
-# TeX
+## TeXnicCenter
 *.tps
 *.glsdefs
