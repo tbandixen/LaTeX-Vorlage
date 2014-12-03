@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"file_exclude_patterns": ["*.acn","*.glo","*.glsdefs","*.ist","*.lol","*.lot","*.idx","*.ind","*.ilg","*.fdb_latexmk","*.aux"],
+			"path": "."
+		}
+	]
+}
