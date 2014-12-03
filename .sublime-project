@@ -6,5 +6,10 @@
 			"file_exclude_patterns": ["*.acn","*.glo","*.glsdefs","*.ist","*.lol","*.lot","*.idx","*.ind","*.ilg","*.fdb_latexmk","*.aux","*.bbl","*.blg","*.lof","*.out","*.synctex.gz"],
 			"path": "."
 		}
-	]
+	],
+	"settings":
+	{
+		"spell_check": true,
+		"dictionary": "Packages/Language - German/German_de_CH.dic"
+	}
 }
