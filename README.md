@@ -9,4 +9,5 @@ You need some nonfree fonts
 
 	```sudo texlua install-getnonfreefonts```
 3. Run the Script
+
 	```sudo getnonfreefonts-sys -a```
