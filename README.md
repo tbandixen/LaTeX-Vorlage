@@ -3,7 +3,7 @@ LaTeX-Template
 
 ## Information for Mac OS X
 
-Works with the MacTeX-2014 Distribution
+Works with the MacTeX-2014 Distribution and Sublime Tex 3 with the LaTeXTools Plugin.
 
 Install some nonfreefonts from www.tug.org
 
