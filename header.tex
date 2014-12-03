@@ -17,7 +17,7 @@
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
-\usepackage[pdfauthor={Thomas Bandixen}, pdftitle={Bachelor-/Projektarbeit FS14 Studiengang Informatik - Projekttitel}, colorlinks=true,linkcolor=black,citecolor=black,plainpages=false]{hyperref}
+\usepackage[pdfauthor={Nicolas Rpps}, pdftitle={titel}, colorlinks=true,linkcolor=black,citecolor=black,plainpages=false]{hyperref}
 \usepackage{textcomp}
 \usepackage[squaren]{SIunits}
 \usepackage{graphicx}
@@ -45,7 +45,7 @@
 
 %***********************************************************************
 % various styles
-%***********************************************************************	
+%***********************************************************************
 
 %create index
 \makeindex
@@ -53,7 +53,7 @@
 %define pagestyle
 \pagestyle{fancy}
 
-%use sans-serif font 
+%use sans-serif font
 %\renewcommand{\familydefault}{\sfdefault}
 
 %define page margin
@@ -65,21 +65,21 @@
 \textblockorigin{10mm}{10mm} % start everything near the top-left corner
 \setlength{\parindent}{0pt}
 
-%horizontal lines for titlepage 
+%horizontal lines for titlepage
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
 %reference to source items inlc source number
 \newcommand{\srcref}[1]{\nameref{src:#1} \cite{#1}}
 
-%header / footer 
+%header / footer
 \renewcommand{\headrulewidth}{0.3pt}
 \renewcommand{\footrulewidth}{0.3pt}
 
-\fancyhead[LO,RE]{} %clear headings for contents 
+\fancyhead[LO,RE]{} %clear headings for contents
 \fancyhead[RO,LE]{\nouppercase{\rightmark}} %right odd pages and left even pages
 \fancyhead[LO,RE]{\MakeUppercase{\leftmark}} %left odd pages and right even pages
 \fancyfoot[LE,RO]{\thepage} %page numbering
-\fancyfoot[C]{} %clear centered page numbering 
+\fancyfoot[C]{} %clear centered page numbering
 
 %define some colors
 \definecolor{gray}{rgb}{0.95,0.95,0.95}
@@ -94,10 +94,10 @@
 % listing
 %***********************************************************************
 
-\lstset{		
+\lstset{
 		basicstyle=\small\ttfamily,
 		frame=single,
-		numbers=left,	
+		numbers=left,
 		numberstyle=\tiny,
 		%firstnumber=auto,
 		numberblanklines=true,
@@ -111,7 +111,7 @@
 		breaklines=true,
 		%prebreak=\Righttorque,
 		backgroundcolor=\color{lgray},
-		keywordstyle=\color{lred}\bfseries, 
+		keywordstyle=\color{lred}\bfseries,
 		commentstyle=\color{lgreen}\ttfamily,
 %		morekeywords={printstr, printhexln},
 		stringstyle=\color{lblue},
