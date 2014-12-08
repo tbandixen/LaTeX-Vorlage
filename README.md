@@ -1,6 +1,12 @@
 LaTeX-Template
 =============
 
+## Information for Windows
+
+You need to have [MiKTeX](http://miktex.org/) installed. The [How to install](http://miktex.org/howto/install-miktex) can be found here: http://miktex.org/howto/install-miktex.
+
+Works with the [TeXnicCenter](http://www.texniccenter.org/).
+
 ## Information for Mac OS X
 
 Works with the MacTeX-2014 Distribution and Sublime Tex 3 with the LaTeXTools Plugin.
