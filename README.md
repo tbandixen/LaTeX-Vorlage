@@ -1,6 +1,8 @@
 LaTeX-Template
 =============
 
+This is a LaTeX template for a ZHAW project work.
+
 ## Information for Windows
 
 You need to have [MiKTeX](http://miktex.org/) installed. The [How to install](http://miktex.org/howto/install-miktex) can be found here: http://miktex.org/howto/install-miktex.
