@@ -22,18 +22,22 @@ Install some nonfreefonts from www.tug.org
  ```latex
  \begin{usecase} ... \end{usecase}
  ```
+ 
  * Add a title with
  ```latex
  \addtitle{Use Case 1}{Title of Use Case 1}
  ```
+ 
  * Add a field with
  ```latex
  \addfield{Property}{Value}
  ```
+ 
  * Add a itemized field
  ```latex
  \additemizedfield{Property}{\item Value 1}
  ```
+ 
  * Add a scenario
  ```latex
  \addscenario{Scenario Name}{\item 1st step}
